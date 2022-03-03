@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TD4ViS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#mainPage"><img src="./files/logo.png"></a>
+    </div>
+    <!-- <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#intro">Intro</a></li>
+		<li><a href="#dates">Dates</a></li>
+		<li><a href="#topics">Topics</a></li>
+		<li><a href="#submission">Submission</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+		<li><a href="#location">Location</a></li>
+		<li><a href="#program">Program</a></li>
+      </ul>
+    </div> -->
+  </div>
+</nav>
+
+<div id="wrapper">
+<div class="jumbotron text-center">
+<canvas id="canvas" width="1950px" height="400px"></canvas>
+<canvas id="canvasbg" width="1950px" height="400px"></canvas>
+</div>
+</div>
+
+<div class="jumbotron text-center">
+<br/>
+<h3>1st International Workshop on</h3>
+<h3><b>Technical Debt for Variability-intensive Systems</b></h3>
+<h3>September 2022, Graz, Austria</h3>
+<i>held in conjunction with SPLC2022 - 26th International Systems and Software Product Line Conference - Sept 12-16 2022</i>
+</div>
+
+
+<div id="intro" class="container-fluid">
+  <div class="row">
+   <div class="col-sm-2"></div>
+    <div class="col-sm-7">
+    <h2>Introduction</h2>
+Taking sub-optimal decisions in the development of systems, even if beneficial in the short term, might challenge future maintenance activities and evolution, a phenomenon termed <b>technical debt</b>. Considering the numerous design and implementation decisions that <b>variability management</b> comprises, it represents a relevant source of technical debt. Thus, variability-intensive systems might accumulate specific types of technical debt affecting diverse software assets such as requirements, architecture, source code, documentation, tests, etc. However, variability management has not been properly analyzed from a technical debt perspective. Therefore, it is important to explore what is specific to <b><i>variability debt</i></b> compared to other types of technical debt, as well as, what are the specifics of managing TD in variability intensive systems. A concise <b>definition and characterization</b> including a catalog of <b>examples</b> is desirable. In addition, many adaptations and approaches can be proposed for the typical technical debt management activities (<b>identification, measurement, prioritization, repayment, monitoring, prevention, representation/documentation, and communication</b>), and a <b>roadmap</b> is to be defined.
+    <h3>Goals</h3>
+    <ul>
+    <li>
+To set the foundations of variability debt management
+</li>
+<li>
+To cross-fertilize the fields of technical debt and variability management
+</li>
+</ul>
+    </div>
+	<div class="col-sm-3">
+Held in conjunction with<br/>
+<a href="https://2022.splc.net/" target="_new"><img src="./files/splcLogo.png" alt="SPLC 2019"></a><br/><br/>
+Workshop organized by<br/>
+<a href="http://www.tecnalia.com/" target="_new"><img src="./files/logo1.png"></a>
+<br/>
+<a href="https://www.jku.at" target="_new"><img src="./files/logo2.png"></a>
+<br/>
+<a href="http://www.puc-rio.br/english/" target="_new"><img src="./files/logo3.jpg"></a>
+<br/>
+<a href="https://biopark.com.br/" target="_new"><img src="./files/logo4.png"></a>
+<br/>
+<a href="https://www.uni-hildesheim.de/en/" target="_new"><img src="./files/logo5.png"></a>
+<br/>
+<a href="https://www.uom.gr/en" target="_new"><img src="./files/logo6.png"></a>
+	</div>
+  </div>
+</div>
+
+<div id="dates" class="container-fluid bg-grey">
+<div class="row">
+<div class="col-sm-2"></div>
+    <div class="col-sm-8">
+	<h2>Important dates</h2>
+     <p>
+Paper and lightning talk submissions: June 14, 2022<br/>
+Paper and lightning talk notifications: July 1, 2022<br/>
+Final version of papers: July 7, 2022<br/>
+TD4ViS 2022 Workshop: 12 or 13 September 2022. To be defined soon<br/>
+SPLC 2022 Conference:12-16, September 2022<br/>
+</p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
+
+
+<div id="topics" class="container-fluid">
+  <div class="row">
+  <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+<h2>Topics</h2>
+<p>
+The following topics are relevant for TD4ViS, but not an exhaustive list:
+</p>
+<ul>
+<li>
+Identification of technical debt related to variability
+</li>
+<li>
+Variability smells
+</li>
+<li>
+Variability management paradigms from a technical debt perspective (e.g., Clone & Own vs SPLs, annotative vs compositional vs other kind of implementation mechanisms)
+</li>
+<li>
+Variability debt in requirements engineering
+</li>
+<li>
+Variability debt in Software Product Line Architectures
+</li>
+<li>
+Variability debt in source code, tests, and other project assets
+</li>
+<li>
+Measurement of variability debt and cost models
+</li>
+<li>
+Prioritization of  variability debt
+</li>
+<li> 
+Re-payment of variability debt and transformation mechanisms for reducing variability debt
+</li>
+<li>
+Monitoring and dashboards for variability debt management
+</li>
+<li>
+Prevention of variability debt
+</li>
+<li>
+Modeling, documenting and communicating variability debt to different stakeholders
+</li>
+<li>
+Relation of variability debt with non-functional properties such as maintainability and evolvability, but also other ones such as performance, safety or security
+</li>
+<li>
+Variability debt in dynamic variability-intensive systems such as self-adaptive systems and dynamic SPLs
+</li>
+<li>
+Tools for variability debt management activities
+</li>
+<li> 
+Case studies and industrial experiences of variability debt
+</li>
+</ul>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
+<div id="submission" class="container-fluid bg-grey">
+  <div class="row">
+   <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+<h2>Submission details</h2>
+<p></p>
+<b>Submission types</b>: Authors interested in participating in the workshop are requested to submit position papers or lightning talk applications:</br>
+<ul>
+<li>
+<b>Position paper</b>: From 2 to 4 pages. If accepted, they are included in SPLC proceedings (Volume 2)
+</li>
+<li>
+<b>Lightning talk application</b>: Just an abstract. If accepted, they are included in the workshop website but not in the SPLC proceedings.
+</li>
+</ul>
+<b>Format</b>:
+<br/>Format for Lightning talk application: Just an abstract to be submitted in easychair (no pdf required).
+<br/>Format for position papers: Submissions should use the ACM SIGS proceedings format.
+<br/>Templates for Word and LaTeX are available at <a href="https://www.acm.org/publications/proceedings-template" target="_new">https://www.acm.org/publications/proceedings-template</a>
+<br/>Latex users are indicated to use the “sigconf” option, so they are recommended to use the template that can be found in "sample-sigconf.tex". 
+<br/>In this way, the following latex code can be placed at the start of the latex document:
+<br/>\documentclass[sigconf]{acmart}	
+<br/>\acmConference[SPLC’22]{26th ACM International Systems and Software Product Lines Conference}{12-16 September, 2022}{Graz, Austria}
+<br/><b>Submission</b>: All position papers submitted to the workshop must be unpublished original work and must not have been submitted anywhere else for publication. Each position paper and lightning talk application will be reviewed by three PC members. Both types should be submitted via EasyChair <a href="https://easychair.org/my/conference?conf=splc2022" target="_new">https://easychair.org/conferences/?conf=splc2022</a> selecting the TD4ViS workshop track</br> 
+    </div>
+	<div class="col-sm-2"></div>
+  </div>
+</div>
+
+
+<div id="committee" class="container-fluid">
+  <div class="row">
+   <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+<h2>Technical Program Committee</h2>
+<ul>
+<li>To be announced</li>
+</ul>
+    </div>
+	<div class="col-sm-2"></div>
+  </div>
+</div>
+
+
+<div id="organizers" class="container-fluid">
+  <div class="row">
+   <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+<h2>Organizers</h2>
+<ul>
+<li>
+Jabier Martinez, Tecnalia, Basque Research and Technology Alliance (BRTA), Spain <a href="mailto:jabier.martinez@tecnalia.com?subject=TD4ViS%20workshop" target="_new"><span class="glyphicon glyphicon-envelope"></span></a> <b>(Main Contact)</b>
+</li>
+<li>
+Wesley K. G. Assunção, Johannes Kepler University Linz, Austria and Pontifical Catholic University of Rio de Janeiro, Brazil
+</li>
+<li>
+Daniele Wolfart, Biopark Education, Brazil
+</li>
+<li>
+Klaus Schmid, University of Hildesheim, Germany
+</li>
+<li>
+Apostolos Ampatzoglou, University of Macedonia, Greece
+</li>
+</ul>
+<p></p>
+<a href="http://www.tecnalia.com/" target="_new"><img src="./files/logo1.png"></a>&nbsp; &nbsp;
+<a href="https://www.jku.at" target="_new"><img src="./files/logo2.png"></a>&nbsp; &nbsp;
+<a href="http://www.puc-rio.br/english/" target="_new"><img src="./files/logo3.jpg"></a>&nbsp; &nbsp;
+<a href="https://biopark.com.br/" target="_new"><img src="./files/logo4.png"></a>
+<a href="https://www.uni-hildesheim.de/en/" target="_new"><img src="./files/logo5.png"></a>
+<a href="https://www.uom.gr/en" target="_new"><img src="./files/logo6.png"></a>
+    </div>
+	<div class="col-sm-2"></div>
+  </div>
+</div>
+
+<div id="location" class="container-fluid bg-grey">
+  <div class="row">
+   <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+<h2>Location</h2>
+Venue: Graz University of Technology, Graz, Austria<br/>
+Check SPLC 2022 website <a href="https://2022.splc.net/" target="_new"><span class="glyphicon glyphicon-new-window"></span></a><br/>
+    </div>
+	<div class="col-sm-2"></div>
+  </div>
+</div>
+
+
+<div id="program" class="container-fluid">
+  <div class="row">
+   <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+<h2>Workshop program</h2>
+</br>
+To be defined.
+</br>
+    </div>
+	<div class="col-sm-2"></div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#mainPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+ <script src="effect.js"></script>
+
+</body>
+</html>
